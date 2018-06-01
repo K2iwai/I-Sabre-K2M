@@ -51,8 +51,8 @@ static int snd_rpi_i_sabre_k2m_hw_params(
 	struct snd_soc_dai         *cpu_dai = rtd->cpu_dai;
 	int bclk_ratio;
 
-	bclk_ratio = snd_pcm_format_physical_width(
-			params_format(params)) * params_channels(params);
+	bclk_ratio = 64;
+
 	return snd_soc_dai_set_bclk_ratio(cpu_dai, bclk_ratio);
 }
 
