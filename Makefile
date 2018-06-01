@@ -1,4 +1,4 @@
-KERNEL_SRC = /lib/modules/$(shell uname -r)/source
+KERNEL_SRC = /lib/modules/$(shell uname -r)/build
 BUILD_DIR := $(shell pwd)
 DTC_DIR = /lib/modules/$(shell uname -r)/build/scripts/dtc/
 VERBOSE = 0
